@@ -1,0 +1,188 @@
+@charset "UTF-8";
+/*-_-*/
+
+*
+{
+  
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  
+}
+
+html,body
+{
+  
+  height: 100dvh;
+  width: 100dvw;
+  
+}
+
+header
+{
+  
+  background-color: gray;
+  box-shadow: 0px 3px 10px dimgray;
+  
+}
+
+.menu
+{
+  
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 6rem;
+  
+}
+
+.logo
+{
+  
+  display: flex;
+  align-items: center;
+  
+}
+
+.logo > p
+{
+  
+  color: white;
+  
+}
+
+.lista-links
+{
+  
+  display: flex;
+  align-items: center;
+  
+}
+
+.lista-links > ul
+{
+  
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  
+}
+
+.item-menu
+{
+  
+  margin: 0px 15px;
+  
+}
+
+.link
+{
+  
+  color: #fff;
+  font-size: 1.15rem;
+  text-decoration: none;
+  
+}
+
+.avaliar > button
+{
+  
+  border: none;
+  padding: 10px 15px;
+  background-color: dimgray;
+  border-radius: 15px
+  
+}
+
+.avaliar > button > a
+{
+  
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #fff;
+  
+}
+
+.mobile-menu-btn
+{
+  
+  display: none;
+  
+}
+
+.mobile-menu
+{
+  
+  display: none;
+  
+}
+
+@media screen and (max-width: 730px)
+{
+  
+  .menu
+  {
+    
+    padding: 1.4rem 4rem;
+    
+  }
+  
+  .lista-links
+  {
+    
+    display: none;
+    
+  }
+  
+  .avaliar
+  {
+    display: none;
+  }
+  
+  .mobile-menu-btn
+  {
+    
+    display: block;
+    
+  }
+  
+  .mobile-menu
+  {
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+    
+  }
+  
+  .mobile-menu > ul
+  {
+    
+    list-style-type: none;
+    
+  }
+  
+  .mobile-menu > .item-menu
+  {
+    
+    display: block;
+    padding-top: 1.2rem;
+    
+  }
+  
+  .mobile-menu > .avaliar
+  {
+    
+    display: block;
+    padding: 1rem 2rem;
+    
+  }
+  
+  .mobile-menu > .avaliar > button
+  {
+    
+    width: 100%;
+    
+  }
+  
+}
